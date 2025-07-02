@@ -14,48 +14,6 @@ Fully typed models with TypeScript
 Responsive UI using Bootstrap/Tailwind
 
 
-## Project Structure
-
----src/
-│
-├── components/
-│   ├── auth/
-│   │   └── Login.tsx
-│   │
-│   ├── employee/
-│   │   ├── EmployeeForm.tsx         # Used for both create/edit
-│   │   ├── EmployeeTable.tsx        # View/edit/delete from table
-│   │   ├── EmployeeDetails.tsx      # Single employee view
-│   │   └── EmployeeList.tsx         # Lists all employees
-│   │
-│   ├── layout/
-│   │   ├── Navbar.tsx
-│   │   └── Menu.tsx
-│   │
-│   └── shared/
-│       ├── Counter.tsx
-│       ├── Youtube.tsx
-│       ├── Customer.tsx
-│       └── ClassComp.tsx
-│
-├── models/
-│   ├── IUsers.ts
-│   ├── IUserList.ts
-│   └── ILogin.ts
-│
-├── services/
-│   ├── EmployeeService.ts          # CRUD with live API (axios)
-│   └── LocalUserService.ts         # Local static data (for demo/dev)
-│
-├── routes/
-│   └── AppRoutes.tsx
-│
-├── App.tsx
-├── index.tsx
-├── App.css
-└── README.md
-
-
 ## Tech Stack
 
 - React
