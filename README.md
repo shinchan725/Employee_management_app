@@ -1,46 +1,89 @@
-# Getting Started with Create React App
+# Employee Management App (React + TypeScript)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive, modular CRUD web application to manage employee records. Built using **React**, **TypeScript**, and **Bootstrap/Tailwind**, it includes employee listing, creation, editing, deletion, and a sample login page that connects to a backend server.
 
-## Available Scripts
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+Local Sign-in form
+Add, edit, and delete employees
+View detailed employee info
+Clean state management using `useState` and `useEffect`
+Axios for API communication
+Fully typed models with TypeScript
+Responsive UI using Bootstrap/Tailwind
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Project Structure
 
-### `npm test`
+---src/
+│
+├── components/
+│   ├── auth/
+│   │   └── Login.tsx
+│   │
+│   ├── employee/
+│   │   ├── EmployeeForm.tsx         # Used for both create/edit
+│   │   ├── EmployeeTable.tsx        # View/edit/delete from table
+│   │   ├── EmployeeDetails.tsx      # Single employee view
+│   │   └── EmployeeList.tsx         # Lists all employees
+│   │
+│   ├── layout/
+│   │   ├── Navbar.tsx
+│   │   └── Menu.tsx
+│   │
+│   └── shared/
+│       ├── Counter.tsx
+│       ├── Youtube.tsx
+│       ├── Customer.tsx
+│       └── ClassComp.tsx
+│
+├── models/
+│   ├── IUsers.ts
+│   ├── IUserList.ts
+│   └── ILogin.ts
+│
+├── services/
+│   ├── EmployeeService.ts          # CRUD with live API (axios)
+│   └── LocalUserService.ts         # Local static data (for demo/dev)
+│
+├── routes/
+│   └── AppRoutes.tsx
+│
+├── App.tsx
+├── index.tsx
+├── App.css
+└── README.md
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React
+- TypeScript
+- Create React App (CRA)
+- Axios
+- Bootstrap / Tailwind CSS
+- React Router DOM
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Available Routes
 
-### `npm run eject`
+| Route       | Component        | Description                  |
+|-------------|------------------|------------------------------|
+| `/form`     | `FormComponent`  | Add/Edit employee            |
+| `/table`    | `TableComponent` | Employee list view           |
+| `/login`    | `Login.tsx`      | Local login (backend connect) |
+| `/userlist` | `UserList.tsx`   | View static users (demo)     |
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Available RoutLive api services
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Live API
+Local static data 
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+
