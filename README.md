@@ -1,4 +1,4 @@
-# Employee Management App (React + TypeScript)
+# Employee Management App (Backend project)
 
 A responsive, modular CRUD web application to manage employee records. Built using **React**, **TypeScript**, and **Bootstrap/Tailwind**, it includes employee listing, creation, editing, deletion, and a sample login page that connects to a backend server.
 
